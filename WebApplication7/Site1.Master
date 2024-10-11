@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication7.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Web</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<%--    Hearder--%>
+    <% this.Page.Server.Execute("Main/Hearder.html"); %>
+
+<%--    Main--%>
+    <% this.Page.Server.Execute("Main/Main.html"); %>
+
+    <div class="home">
+    <% this.Page.Server.Execute("Main/MainLeft.html"); %>
+    <% this.Page.Server.Execute("Main/MainMid.html"); %>
+    <% this.Page.Server.Execute("Main/MainRight.html"); %>
+
+
+
+    </div>
+    <% this.Page.Server.Execute("Main/Footer.html"); %>
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

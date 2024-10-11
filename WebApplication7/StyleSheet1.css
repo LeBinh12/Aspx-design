@@ -1,0 +1,146 @@
+﻿body {
+}
+
+.hearder {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7ecf0;
+    display: flex;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.Logo{
+    width:70%;
+    display:flex;
+    justify-items: center;
+    align-items:center;
+}
+.Login img{
+    width:11em;
+    
+}
+
+.home{
+    display:flex;
+    width:100%;
+    height: 500px;
+
+}
+
+.main-left{
+    width:20%;
+    background: green;
+}
+
+.main-mid{
+    width:60%;
+    background: black;
+}
+
+.main-right{
+    width:20%;
+    background: yellow;
+}
+
+.bottom{
+    width:100%;
+    height:300px;
+    background-color: aqua;
+
+}
+
+.main{
+    position: static;
+    margin-top: 2%;
+    width:100%;
+    height:100px;
+    background-color:white;
+    text-align:center;
+}
+.menu{
+    width:100%;
+    display:flex;
+    height:100%;
+}
+.menu ul{
+    width:60%;
+    display:flex;
+    list-style:none;
+    text-align:center;
+}
+    .menu ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+.menu ul li a,
+.Search a,
+.Account a{
+    text-decoration: none;
+    color: black;
+    transition:0.3s;
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.Search{
+    margin-right:auto;
+    display:flex;
+}
+
+    .Search input[type="text"] {
+        border: 1px solid;
+        border-radius: 10px;
+        height: 40px;
+        width: 200px;
+        border: 1px solid #e6ecf0;
+        padding: 0 15px;
+        border-radius: 20px !important;
+    }
+
+    .Search i {
+        position: absolute;
+        font-size: 1.2em;
+        top: 160px;
+        right: 380px;
+    }
+
+.Account{
+    margin-right:auto;
+}
+.Account i{
+    font-size:1.2em;
+}
+
+.menu ul li a:hover,
+.Search a:hover,
+.Account a:hover{
+    color: aqua;
+}
+
+.Hotline {
+    width: 40%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hotline span{
+    margin-left: 60%;
+
+}
+
+
